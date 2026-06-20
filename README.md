@@ -111,7 +111,3 @@ https://github.com/user-attachments/assets/5093bccd-83f3-439a-9aad-f82bd0934343
 - For the UDP bridge, make sure the port in `LivelypngUDP.py` matches the one set in the OBS script panel.
 
 ---
-
-## 📄 License
-
-MIT — do whatever you want, credit appreciated 💙
