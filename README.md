@@ -12,7 +12,6 @@ Give your PNG vtuber smooth, physics-y movement — tilts, drops, bounces — al
 |---|---|
 | Hold **A** | Tilt left |
 | Hold **D** | Tilt right |
-| Hold **A + D** | Stays centered |
 | Hold **Shift** | Small downward drop |
 | Hold **Ctrl** | Big downward drop |
 | Release any key | Smooth return to neutral |
@@ -95,12 +94,11 @@ All settings live in **Tools → Scripts → [your script]**:
 
 ## 🎬 Preview
 
-> 📹 *Add a GIF or video here showing the tilt + drop in action.*
-> 
-> Tip: Record a short clip in OBS, convert with [ezgif.com](https://ezgif.com) and drop it here:
-> ```
-> ![demo](demo.gif)
-> ```
+
+
+https://github.com/user-attachments/assets/5093bccd-83f3-439a-9aad-f82bd0934343
+
+
 
 ---
 
@@ -112,7 +110,3 @@ All settings live in **Tools → Scripts → [your script]**:
 - For the UDP bridge, make sure the port in `LivelypngUDP.py` matches the one set in the OBS script panel.
 
 ---
-
-## 📄 License
-
-MIT — do whatever you want, credit appreciated 💙
