@@ -17,7 +17,8 @@ Give your PNG vtuber smooth, physics-y movement — tilts, drops, bounces — al
 | Release any key | Smooth return to neutral |
 
 All transitions use a **custom cubic Bézier easing curve**, giving that satisfying springy feel. Tilt angle, drop distance, animation duration and curve shape are all adjustable from OBS.
-Here a Website to meke some curves: https://cubic-bezier.com/#.34,.12,.09,.98
+Here a Website to make some curves: 
+https://cubic-bezier.com/#.34,.12,.09,.98
 
 ---
 
