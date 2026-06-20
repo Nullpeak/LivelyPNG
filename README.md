@@ -12,7 +12,6 @@ Give your PNG vtuber smooth, physics-y movement — tilts, drops, bounces — al
 |---|---|
 | Hold **A** | Tilt left |
 | Hold **D** | Tilt right |
-| Hold **A + D** | Stays centered |
 | Hold **Shift** | Small downward drop |
 | Hold **Ctrl** | Big downward drop |
 | Release any key | Smooth return to neutral |
