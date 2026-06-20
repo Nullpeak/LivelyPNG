@@ -95,7 +95,11 @@ All settings live in **Tools → Scripts → [your script]**:
 
 ## 🎬 Preview
 
-https://github.com/Nullpeak/LivelyPNG/blob/main/demo.mp4
+
+
+https://github.com/user-attachments/assets/5093bccd-83f3-439a-9aad-f82bd0934343
+
+
 
 ---
 
