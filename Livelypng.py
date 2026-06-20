@@ -194,7 +194,7 @@ hotkey_shift = None
 hotkey_ctrl = None
 
 def script_description():
-    return "<h2>LivePNG</h2><p>Configura las variables abajo y recarga el script para aplicar cambios.</p>"
+    return "<h2>LivelyPNG</h2><p>Configura las variables abajo y recarga el script para aplicar cambios.</p>"
 
 def script_defaults(settings):
     obs.obs_data_set_default_string(settings, "source_name", SOURCE_NAME)
