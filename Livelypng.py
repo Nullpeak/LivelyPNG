@@ -56,6 +56,10 @@ def cubic_bezier(t, p0, p1, p2, p3):
 def ease_value(t):
     return cubic_bezier(t, BEZIER_X1, BEZIER_Y1, BEZIER_X2, BEZIER_Y2)
 
+# ============================================================
+# SCENE ITEM HELPERS
+# ============================================================
+
 def get_sceneitem(name):
     scene_as_source = obs.obs_frontend_get_current_scene()
     if not scene_as_source:
@@ -114,6 +118,10 @@ def start_drop_animation(to_drop):
     anim_start_drop = current_drop
     anim_drop_start_time = obs.obs_get_video_frame_time() / 1000000000.0
     is_drop_animating = True
+
+# ============================================================
+# OBS CALLBACKS
+# ============================================================
 
 def script_tick(seconds):
     global current_tilt, current_drop, is_tilt_animating, is_drop_animating

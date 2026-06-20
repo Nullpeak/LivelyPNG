@@ -82,21 +82,7 @@ def get_sceneitem(name):
     obs.obs_source_release(scene_as_source)
     return item
 
-def find_and_cache_item():
-    global tilted_sceneitem, base_rotation, base_pos_x, base_pos_y
-    item = get_sceneitem(SOURCE_NAME)
-    if item:
-        tilted_sceneitem = item
-        base_rotation = obs.obs_sceneitem_get_rot(item)
-        pos = obs.vec2()
-        obs.obs_sceneitem_get_pos(item, pos)
-        base_pos_x = pos.x
-        base_pos_y = pos.y
-        return True
-    return False
 
-def is_item_valid(item):
-    return item is not None
 
 
 # ============================================================
@@ -121,6 +107,22 @@ def resolve_drop():
         return SHIFT_DROP
     return 0.0
 
+def find_and_cache_item():
+    global tilted_sceneitem, base_rotation, base_pos_x, base_pos_y
+    item = get_sceneitem(SOURCE_NAME)
+    if item:
+        tilted_sceneitem = item
+        base_rotation = obs.obs_sceneitem_get_rot(item)
+        pos = obs.vec2()
+        obs.obs_sceneitem_get_pos(item, pos)
+        base_pos_x = pos.x
+        base_pos_y = pos.y
+        return True
+    return False
+
+def is_item_valid(item):
+    return item is not None
+
 def start_tilt_animation(to_tilt):
     global target_tilt, anim_start_tilt, anim_tilt_start_time, is_tilt_animating
     if abs(target_tilt - to_tilt) < 0.01 and not is_tilt_animating:
@@ -142,7 +144,6 @@ def start_drop_animation(to_drop):
 def apply_keys():
     start_tilt_animation(resolve_tilt())
     start_drop_animation(resolve_drop())
-
 
 # ============================================================
 # OBS CALLBACKS
